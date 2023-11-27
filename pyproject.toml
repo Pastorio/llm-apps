@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "llm-apps"
+version = "0.1.0"
+description = ""
+authors = ["Pastório <joaopedropastorio@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "llm_apps"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ipykernel = "^6.26.0"
+python-dotenv = "^1.0.0"
+nbformat = "^5.9.2"
+langchain = "^0.0.340"
+openai = "^1.3.5"
+transformers = "^4.35.2"
+accelerate = "^0.24.1"
+torch = "^2.1.1"
+einops = "^0.7.0"
+llama-index = { version = "^0.9.6.post1", python = ">=3.8.1,<3.12" }
+streamlit = "^1.28.2"
+pypdf2 = "^3.0.1"
+pypdf = "^3.17.1"
+sentence-transformers = "^2.2.2"
+chromadb = "^0.4.18"
+bitsandbytes = "^0.41.2.post2"
+faiss-cpu = "^1.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
